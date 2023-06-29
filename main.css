@@ -221,6 +221,7 @@ a {
 
 /* ==================== FOOTER ===================== */
 footer {
+    bottom: 0;
     text-align: center;
     padding: 3px;
     color: #000;
@@ -518,12 +519,17 @@ footer {
 
 
 /* ========================= BLOG SECTION ==================== */
+.dog__breeds{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
 .blog__dog {
     display: inline-block;
     position: relative;
-    width: 400px;
-    min-width: 400px;
-    height: 400px;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
     border-radius: 30px;
     overflow: hidden;
     margin: 30px;
@@ -552,8 +558,8 @@ footer {
 }
 
 .dog__logo {
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     border-radius: 20px;
     position: absolute;
     bottom: 30%;
@@ -574,17 +580,17 @@ footer {
 .dog__description {
     position: absolute;
     color: #000;
-    font-weight: 900;
-    left: 150px;
+    font-weight: 500;
+    left: 100px;
     bottom: 26%;
 }
 
 .dog__btn {
     position: absolute;
     color: #000;
-    right: 30px;
+    right: 20px;
     bottom: 10%;
-    padding: 10px 20px;
+    padding: 2px 2px;
     border: 1px solid #000;
 }
 
@@ -603,10 +609,13 @@ footer {
 }
 
 #searchInput {
+    margin-top: 15px;
     margin-left: 15%;
     margin-bottom: 5%;
     padding: 15px;
     border-radius: 10px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 input[type=text] {
